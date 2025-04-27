@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+	<div th:fragment="header">
+		<nav class="navbar navbar-dark bg-info px-3 ">
+			<div class="container-fluid">
+
+				<a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+					<img th:src="@{/Images/Profound.jpg}" alt="Loading Image" width="60"
+					height="50" class="d-inline-block rounded align-text-top me-2">
+					<div class="d-flex flex-column align-items-center text-center">
+						<span class="fs-5 fw-bold">Profound</span>
+						<!-- Larger text for "Profound" -->
+						<span class="fs-6 text-dark">Edutech Private Limited</span>
+						<!-- Smaller text below -->
+					</div>
+				</a>
+				<div class="d-flex justify-content-center">
+					<a th:href="@{/Profound/login}"
+						class="btn btn-light fw-bold me-2 btn-hover-shadow">Login</a> <a
+						th:href="@{/Profound/register}"
+						class="btn btn-success fw-bold btn-hover-shadow">Register</a>
+				</div>
+
+
+			</div>
+		</nav>
+
+
+		
+	</div>
+	
+	
+	
+
+
+
+	
+</body>
+</html>

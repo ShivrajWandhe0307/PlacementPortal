@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Placement Portal</title>
+<link rel="stylesheet" href="/CSSFile/index.css">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet" />
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-dark text-white">
+	<header
+		class="position-fixed top-0 start-0 w-100 bg-white shadow"  style="z-index: 1050;" >
+		<div th:replace="header :: header"></div>
+	</header>
+
+	<!-- IMAGE -->
+
+	<div class="container border-top border-bottom py-2"
+		style="margin-top: 100px;">
+		<marquee behavior="scroll" direction="left"
+			class="text-white fw-medium fw-bold"> 📘 Learn smarter,
+			grow faster – Welcome to your personalized study companion! 🚀 </marquee>
+		<img th:src="@{/Images/home.webp}" alt="Home Image"
+			class="img-fluid rounded shadow " style="width: 100%; height: 550px;">
+<div class="position-absolute top-50 text-success" style="left: 20%; transform: translateY(-60%); text-align: center;font-weight: bold; font-size: 2rem; padding: 20px; height: 200px; width: 400px;">
+  🌟 Unlock your potential, chase your dreams, and shape your future with every lesson! 📚💡
+</div>
+			
+	</div>
+
+
+
+
+
+
+
+	<!-- SECTU -->
+
+
+	<div class="container-fluid  mt-3 mb-3 text-dark bg-white p-5 ">
+		<!-- SPLIZATION -->
+
+		<div class="container-fluid bg-secondary p-5 pt-2  min-vh-50">
+			<h3 class="text-center  font-sm font-bold mt-1 m-3"
+				style="font-family: sans-serif;">
+				<u>OUR SPELIZATION</u>
+			</h3>
+			<div class="row g-4 d-flex justify-content-center">
+				<div class="col-md-3 min-vh-20" style="height: 300px">
+					<div class="card  shadow-lg h-100 border border-secondary "
+						style="border-width: 2px; padding:2%; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); border-radius: 40%; overflow: hidden;">
+						<img class="card-img-top mx-auto d-block" th:src="@{/Images/java.png}"
+							alt="Card image cap" style="height: 40%; width: 40%">
+						<div class="card-body p-3 text-center"
+							style="background-color: #f8f9fa; max-height: 220px;">
+							<p class="card-text" style="font-size: 12px;">This Java Full
+								Stack course equips students with in-demand skills in backend
+								development using Spring Boot and frontend development using
+								React. Learners gain hands-on experience building scalable web
+								applications, mastering REST APIs, MySQL, and full stack
+								integration. Ideal for aspiring developers aiming for
+								enterprise-level application development.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 min-vh-20" style="height: 300px">
+					<div class="card h-100 "
+						style="border-width: 2px;padding:2%; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); border-radius: 40%; overflow: hidden;">
+						<img class="card-img-top mx-auto d-block"
+							th:src="@{/Images/Csharp_Logo.png}" alt="Card image cap"
+							style="height: 40%; width: 40%">
+						<div class="card-body p-3 text-center"
+							style="background-color: #f8f9fa; max-height: 220px;">
+							<p class="card-text" style="font-size: 12px;">This .NET Full
+								Stack course equips students with in-demand skills in backend
+								development using ASP.NET Core and frontend development using
+								React. Learners gain hands-on experience building scalable web
+								applications, mastering REST APIs, SQL Server, and full stack
+								integration. Ideal for aspiring developers aiming for
+								enterprise-level application development.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3" style="height: 300px">
+					<div class="card h-100  shadow-lg border border-secondary "
+						style="border-width: 2px;padding:2%; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); border-radius: 40%; overflow: hidden;">
+						<img class="card-img-top mx-auto d-block"
+							th:src="@{/Images/DataScience.webp}" alt="Card image cap"
+							style="height: 40%; width: 40%">
+						<div class="card-body p-3 text-center"
+							style="background-color: #f8f9fa; max-height: 220px;">
+							<p class="card-text" style="font-size: 12px;">This Data
+								Science course equips students with in-demand skills in data
+								analysis, machine learning, and statistical modeling using
+								Python. Learners gain hands-on experience with real-world
+								datasets, mastering tools like Pandas, NumPy, Scikit-learn, and
+								visualization libraries. Ideal for aspiring data scientists
+								aiming for impactful, data-driven decision-making in industry.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row g-4 d-flex justify-content-center mt-3">
+				<div class="col-md-3" style="height: 300px">
+					<div class="card shadow-lg h-100 border-0 "
+						style="border-width: 2px;padding:2%; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);  border-radius: 40%; overflow: hidden;">
+						<img class="card-img-top mx-auto d-block" th:src="@{/Images/Testing.jpg}"
+							alt="Card image cap" style="height: 40%; width: 40%">
+						<div class="card-body p-3 text-center"
+							style="background-color: #f8f9fa; max-height: 220px;">
+							<p class="card-text" style="font-size: 12px;">This Software
+								Testing course equips students with essential skills in manual
+								and automated testing using tools like Selenium, JUnit, and
+								TestNG. Learners gain hands-on experience in writing test cases,
+								bug tracking, and ensuring software quality across development
+								cycles. Ideal for aspiring QA professionals targeting robust,
+								error-free applications.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3" style="height: 300px">
+					<div class="card h-100 shadow-lg border border-secondary p-3"
+						style="border-width: 2px;padding:2%; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); border-radius: 40%; overflow: hidden;">
+						<img class="card-img-top img-fluid mx-auto d-block"
+							th:src="@{/Images/WebImage.png}" alt="Card image cap"
+							style="height: 40%; width: 40%">
+						<div class="card-body p-1 text-center"
+							style="background-color: #f8f9fa; max-height: 220px;">
+							<p class="card-text" style="font-size: 12px;">This Web
+								Development course equips students with in-demand skills in
+								building modern websites and web applications using HTML, CSS,
+								JavaScript, and frameworks like React or Angular. Learners gain
+								hands-on experience in frontend and backend development,
+								responsive design, and deployment. Ideal for aspiring developers
+								aiming to create dynamic, user-friendly websites.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+
+
+		<!-- TEAM DATA -->
+
+		<h3 class="text-center  font-sm font-bold m-3 mt-5"
+			style="font-family: sans-serif;">
+			<u>TEAM</u>
+		</h3>
+		<div class="row g-4 d-flex justify-content-center">
+			<div class="col-md-3">
+				<div class="card   shadow-lg h-100 border-0"
+					style="border-width: 2px; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);">
+					<img class="card-img-top mx-auto d-block" th:src="@{/Images/person.png}"
+						alt="Card image cap" style="height: 50%; width: 50%">
+					<div class="card-body mx-auto d-block" >
+						<h4 class="card-text ">Wandhe Shivraj</h4>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card h-100 shadow-lg border-0 "
+					style="border-width: 2px; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);">
+					<img class="card-img-top mx-auto d-block" th:src="@{/Images/person.png}"
+						alt="Card image cap" style="height: 50%; width: 50%">
+					<div class="card-body mx-auto d-block">
+						<h4 class="card-text ">Jadhav Ushakiran</h4>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card h-100  shadow-lg border-0 "
+					style="border-width: 2px; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);">
+					<img class="card-img-top mx-auto d-block" th:src="@{/Images/person.png}"
+						alt="Card image cap" style="height: 50%; width: 50%">
+					<div class="card-body mx-auto d-block">
+						<h4 class="card-text">Kadam Vaibhav</h4>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row g-4 mt-3 d-flex justify-content-center">
+			<div class="col-md-3 ">
+				<div class="card h-100 shadow-lg border-0 "
+					style="border-width: 2px; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);">
+					<img class="card-img-top mx-auto d-block" th:src="@{/Images/person.png}"
+						alt="Card image cap" style="height: 50%; width: 50%">
+					<div class="card-body mx-auto d-block">
+						<h4 class="card-text">Mule Sumit</h4>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card h-100 shadow-lg border-0"
+					style="border-width: 2px; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);">
+					<img class="card-img-top  mx-auto d-block" th:src="@{/Images/person.png}"
+						alt="Card image cap" style="height: 50%; width: 50%">
+					<div class="card-body mx-auto d-block">
+						<h4 class="card-text">Kadam Kartik</h4>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card h-100 shadow-lg border-0 "
+					style="border-width: 2px; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);">
+					<img class="card-img-top mx-auto d-block" th:src="@{/Images/person.png}"
+						alt="Card image cap" style="height: 50%; width: 50%">
+					<div class="card-body mx-auto d-block">
+						<h4 class="card-text">Jadhav Kiran</h4>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- <div th:replace="VerticalBar::VerticalBar">
+	</div> -->
+	<footer class="bottom-0 start-0 w-100  bg-dark shadow fw-bold text-center p-3 " >
+		<div th:replace="footer :: footer"></div>
+ 
+</footer>
+
+
+
+
+
+
+
+</body>
+</html>
